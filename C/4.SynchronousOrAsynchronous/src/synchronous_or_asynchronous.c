@@ -28,6 +28,7 @@ int main(int argc, char* argv[])
 	// Initialise the program
 
 	// Get your rank
+	int my_rank;
 	if(my_rank == 0)
 	{
 		// Declare an int with value 123 and send it to MPI process 1 synchronously.
