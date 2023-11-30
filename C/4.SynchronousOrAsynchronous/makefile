@@ -13,3 +13,6 @@ create_directory:
 
 $(BIN_DIR)/synchronous_or_asynchronous: $(SRC_DIR)/synchronous_or_asynchronous.c
 	$(CC) -o $@ $< $(CFLAGS)
+
+clean:
+	rm -f $(BIN_DIR)/*;
