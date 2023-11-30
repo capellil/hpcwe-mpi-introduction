@@ -13,3 +13,6 @@ create_directory:
 
 $(BIN_DIR)/preamble: $(SRC_DIR)/preamble.c
 	$(CC) -o $@ $< $(CFLAGS)
+
+clean:
+	rm -f $(BIN_DIR)/*;

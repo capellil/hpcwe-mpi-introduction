@@ -13,3 +13,6 @@ create_directory:
 
 $(BIN_DIR)/helloworld: $(SRC_DIR)/helloworld.c
 	$(CC) -o $@ $< $(CFLAGS)
+
+clean:
+	rm -f $(BIN_DIR)/*;

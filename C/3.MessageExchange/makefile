@@ -13,3 +13,6 @@ create_directory:
 
 $(BIN_DIR)/message_exchange: $(SRC_DIR)/message_exchange.c
 	$(CC) -o $@ $< $(CFLAGS)
+
+clean:
+	rm -f $(BIN_DIR)/*;
