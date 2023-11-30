@@ -25,11 +25,13 @@
  **/
 int main(int argc, char* argv[])
 {
+	// Initialise the program
 	/// The rank of the MPI process running this instance.
 	int my_rank = 0;
 	/// The number of MPI processes in MPI_COMM_WORLD.
 	int comm_size = 0;
 	printf("Hello world, I am MPI process %d. We are %d MPI processes.\n", my_rank, comm_size);
+	// Finalize the program
 
 	return EXIT_SUCCESS;
 }
