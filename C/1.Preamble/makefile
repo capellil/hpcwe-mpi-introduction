@@ -1,5 +1,5 @@
 CC = mpicc
-CFLAGS += -O3 -fopenmp
+CFLAGS += -O3
 SRC_DIR=src
 BIN_DIR=bin
 

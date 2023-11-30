@@ -1,5 +1,5 @@
-CC = gcc-13
-CFLAGS += -O3 -fopenmp
+CC = mpicc
+CFLAGS += -O3
 SRC_DIR=src
 BIN_DIR=bin
 
