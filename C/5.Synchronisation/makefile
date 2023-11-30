@@ -13,3 +13,6 @@ create_directory:
 
 $(BIN_DIR)/synchronisation: $(SRC_DIR)/synchronisation.c
 	$(CC) -o $@ $< $(CFLAGS)
+
+clean:
+	rm -f $(BIN_DIR)/*;
