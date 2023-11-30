@@ -6,10 +6,10 @@ BIN_DIR=bin
 default: all
 
 all: create_directory \
-	 $(BIN_DIR)/message_exchange
+	 $(BIN_DIR)/synchronisation
 
 create_directory:
 	@mkdir -p $(BIN_DIR)
 
-$(BIN_DIR)/message_exchange: $(SRC_DIR)/message_exchange.c
+$(BIN_DIR)/synchronisation: $(SRC_DIR)/synchronisation.c
 	$(CC) -o $@ $< $(CFLAGS)
