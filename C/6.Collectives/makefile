@@ -1,5 +1,5 @@
-CC = gcc-13
-CFLAGS += -O3 -fopenmp
+CC = mpicc
+CFLAGS += -O3
 SRC_DIR=src
 BIN_DIR=bin
 
@@ -13,3 +13,7 @@ create_directory:
 
 $(BIN_DIR)/collectives: $(SRC_DIR)/collectives.c
 	$(CC) -o $@ $< $(CFLAGS)
+
+clean:
+	rm -f $(BIN_DIR)/*;
+
