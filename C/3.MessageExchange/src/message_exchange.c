@@ -21,7 +21,8 @@
 /**
  * @brief This program requires 2 MPI processes to exchange messages.
  * @details In this program, an MPI process first sends one integer, which is
- * received then printed. The second message exchange is 
+ * received then printed. The second message exchange is an array of four
+ * elements.
  **/
 int main(int argc, char* argv[])
 {
